@@ -1,9 +1,6 @@
-import Sandwich from "./Sandwich";
+import Sandwich from './Sandwich'
 
 export default class XBacon extends Sandwich{
-    public inserirPao(): void {
-        console.log('Pão inserido em seu XBacon.')
-    }
 
     public inserirHamburguer(): void {
         console.log('Hamburguer inserido em seu XBacon.')

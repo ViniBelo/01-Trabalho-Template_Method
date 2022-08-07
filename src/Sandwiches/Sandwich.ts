@@ -1,20 +1,25 @@
 export default abstract class Sandwich {
+
+    public templateMethod(){
+        this.inserirPao()
+        this.inserirHamburguer()
+        this.inserirQueijo()
+        this.inserirSalada()
+        this.inserirBacon()
+    }
+
+    //Feito diretamente na classe abstrata
     public inserirPao(): void{
         console.log('Pão inserido em seu sanduiche.')
     }
-    public inserirHamburguer(): void{
-        console.log('Hamburguer inserido em seu sanduiche.')
-    }
 
-    public inserirQueijo(): void{
-        console.log('Queijo inserido em seu sanduiche.')
-    }
+    //Obrigatório nas classes concretas
+    public abstract inserirHamburguer(): void
 
-    public inserirSalada():void{
-        console.log('Salada inserido em seu sanduiche.')
-    }
+    //Hooks
+    public inserirQueijo(): void{}
 
-    public inserirBacon():void{
-        console.log('Bacon inserido em seu sanduiche.')
-    }
+    public inserirSalada():void{}
+
+    public inserirBacon():void{}
 }
