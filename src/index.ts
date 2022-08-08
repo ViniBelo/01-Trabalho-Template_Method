@@ -13,15 +13,10 @@ lanche1.inserirSalada()
 console.log()
 const lanche2 = new XBacon()
 
-lanche2.inserirPao()
-lanche2.inserirHamburguer()
-lanche2.inserirQueijo()
-lanche2.inserirBacon()
+lanche2.templateMethod()
 
 
 console.log()
 const lanche3 = new XBurguer()
 
-lanche3.inserirPao()
-lanche3.inserirHamburguer()
-lanche3.inserirQueijo()
+lanche3.templateMethod()
